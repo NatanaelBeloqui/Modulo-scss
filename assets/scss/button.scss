@@ -1,0 +1,12 @@
+.btn {
+    width: 200px;
+    padding: 10px 0px;
+    background: none;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.btn-laranja {
+    @extend .btn;
+    background-color: orange;
+}
