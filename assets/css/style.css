@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn {
   width: 200px;
   padding: 10px 0px;
@@ -10,14 +11,24 @@
 .btn.btn-laranja {
   background: orange;
   color: #fff;
+  /* Chamada de mixin -> nome do mixin -> argumentos do mixin => Obs: esses argumentos funcionam igual função */
+}
+.btn.btn-laranja:hover {
+  background: gray;
 }
 .btn.btn-roxo {
   background: purple;
   color: #fff;
 }
+.btn.btn-roxo:hover {
+  background: #404040;
+}
 .btn.btn-amarelo {
   background: yellow;
   color: #000;
+}
+.btn.btn-amarelo:hover {
+  background: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

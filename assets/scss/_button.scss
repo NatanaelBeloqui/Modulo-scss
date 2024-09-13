@@ -1,6 +1,9 @@
 @mixin button-style($background, $color) {
     background: $background;
     color: $color;
+    &:hover {
+        background: grayscale($background);
+    }
 }
 
 .btn {
@@ -14,6 +17,7 @@
 
     &.btn-laranja {
         @include button-style($color-orange, #fff);
+/* Chamada de mixin -> nome do mixin -> argumentos do mixin => Obs: esses argumentos funcionam igual função */
     }
     
     &.btn-roxo {
